@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" Content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<title>ACCOUNT USER</title>
+</head>
+<body>
+<style>
+body
+{
+background-color:pink;
+}
+.btn-active{
+background-color:white;
+width:90%;
+}
+.jumbotron
+{
+margin: auto;
+width:70%;
+margin-top:50px;
+}
+.sat
+{
+margin-top:-100px;
+margin-left:50px;
+}
+
+.mail {
+margin-top:110px;
+margin-left:-400px;
+padding-top: 20px;
+padding-bottom: 10px;
+width: 400px;
+border: 1px soild silver;
+}
+.mail h2 {
+margin-top:100px;
+margin-left:-159px;
+}
+input {
+font-size: 20pt;
+}
+input:focus, textarea:focus{
+background-color: lightyellow;
+}
+input submit {
+
+font-size: 1pt;
+}
+.rq {
+color: #FF0000;
+font-size: 10pt;
+}
+.submit
+{
+margin-top:50px;
+width:24%;
+}
+.text
+{
+margin-left:70px;
+}
+</style>
+<script>
+function myfunc(){
+alert("Please enter name and e-mail to make transaction");
+}
+function myfunca(){
+alert("Please enter name and e-mail to see transaction history");
+}
+</script>
+
+<header>
+<nav class=" nav navbar-fixed top navbar-inverse">
+<a href="./index.html"><div class="navbar-brand">GTSF BANKING</div></a>
+<a href="./home.html"><div class="navbar-brand ">HOME </div></a>
+<a href="#"><button class="btn-active"><div class="navbar-brand" style="color:black;">ACCOUNT</div></button></a>
+<a href="#"><div onclick="myfunc()"><div class="navbar-brand">TRANSACTION</div></div></a>
+<a href="#"><div onclick="myfunca()"><div class=" navbar-brand">HISTORY</div></div></a>
+</nav>
+</header>
+<div class="jumbotron">
+<center>
+<table>
+
+<td>
+<span class="glyphicon glyphicon-user" style="font-size:200px;"></span></td>
+<td>
+<div class="sat"><h2>Name:</h2><input type ="text" class="name" name="name"required></input></div></td>
+
+<td>
+<center>
+<div onload='document.form1.text1.focus()'>
+<div class="mail">
+<form name="form1" /> 
+<div class="sar"><h2>E-mail:</h2></div>
+<div class="sa"><input type class='text' name='text1'/></div>
+
+<center>
+
+<input type class="submit" name="submit" value="Submit"  onclick="ValidateEmail(document.form1.text1)"/>
+</center>
+</form>
+</div>
+</div>
+</center>
+</td>
+
+
+</table>
+</div>
+
+<script src="email-validation.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" Content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<title>HOME</title>
+</head>
+<script>
+function fun(){
+alert("Login into account user to make transaction");
+location.replace("account.html")
+return true;
+}
+function afun(){
+alert("Login into account user to see transaction history");
+location.replace("account.html")
+return true;
+}
+
+</script>
+
+<style>
+.btn-active
+{
+background-color:white;
+}
+body
+{
+background-color:#6d597a;
+width: 100%; 
+height: 100%;
+ margin: 0;
+text-decoration:none;
+}
+a{ 
+text-decoration: none;
+ background-color: transparent;
+ color:#ededed; 
+}
+.inner-banner-image
+{
+color:white;
+padding-top:12%;
+width:80%;
+margin-top:-45% ;
+}
+.banner_content
+{	
+position:relative;
+ padding-top: 6%;
+ padding-bottom: 6%; 
+overflow:hidden;
+ margin-bottom: 12%;
+ background-color: rgba(0, 0, 0, 0.7);
+ max-width: 600px;
+border-radius:30px;
+}
+.content
+{
+min-height:600px;
+}
+.banner_image
+{
+color: #f8f8f8;
+margin-top:0px;
+background-position:cover;
+padding-bottom: 50px;
+ margin-bottom: 20px; 
+text-align: center;
+ color: #f8f8f8;
+background-size: cover;
+}
+.container
+{
+width:90%;
+ margin-top:50px;
+ overflow:hidden;
+}
+items
+{
+width:20%;
+ display:block;
+ padding: 4px;
+ margin-bottom: 20px;
+margin-top:10%;
+ line-height: 1.42857143;
+ background-color: #fff;
+ border: 2px solid #ddd;
+ border-radius: 4px;
+ float:left;
+ margin-left:2%;
+}
+.thumbnail
+{
+display: block;
+padding:4px;
+margin-bottom:20px;
+line-height:1.4;
+background-color:#fff;
+border:1px solid black;
+border-radius:20px;
+-webkit-transition:border .2s ease-in-out;
+-o-transition:border .2s ease-in -out;
+transition:border .2s ease-in-out;
+margin-top:0px;
+text-decoration:none;
+}
+.caption{
+color:#000;
+ padding:0px 10px 10px;
+ font-weight: bold; 
+margin-top:-20px;
+text-align: center;
+text-decoration:none;
+}
+footer
+{
+background-color:black;
+color:white;
+}
+</style>
+<body>
+<header>
+<nav class=" nav navbar-fixed top navbar-inverse">
+<a href="./index.html"><div class="navbar-brand">GTSF BANKING</div></a>
+<a href="#"><button class="btn-active"><div class="navbar-brand " style="color:black;">HOME </div></button></a>
+<a href="account.html"><div class="navbar-brand">ACCOUNT USER</div></a>
+<a href="#"><div onclick="fun()"><div class="navbar-brand">TRANSACTION</div></div></a>
+<a href="#"><div onclick="afun()"><div class=" navbar-inverse navbar-brand">HISTORY</div></div></a>
+</nav>
+</header>
+<div class="content">
+<div class="banner_image">
+<img  src="download.jpg" width="90%">
+<center>
+<div class="inner-banner-image">
+<div class="banner_content">
+<h1>WELCOME TO GTSF BANK</h1>
+<p>Happy Banking</p>
+</div>
+</div>
+</center>
+</div>
+
+
+<div class="container">
+   
+             <div class="row">
+  
+
+<div class="col-sm-4">
+<div  class="thumbnail">
+                  <a href="account.html" >
+   
+                     <img  src="images.png" width=100%" class="thumbnail">
+ 
+                       <div class="caption">
+  
+                          <h3>ACCOUNT USER</h3>
+  
+                      </div>
+
+                    </a>
+  
+              </div>
+ </div>
+
+ <div class="col-sm-4 ">
+<div  class="thumbnail">
+                   <a href="#">
+<div onclick="fun()" >
+                      <img  src="forbidden.png" width="100%"class="thumbnail">
+ 
+                       <div  class="caption" >
+ 
+                           <h3>TRANSACTION</h3>
+   
+                       </div>
+  
+</div> 
+                 </a>
+     
+           </div>
+  </div>
+
+              <div class="col-sm-4 ">
+<div class="thumbnail">
+                <a href="#" >
+     
+<div onclick="afun()" >
+                   <img  src="history.jpg" width="100%" alt="" class="thumbnail">
+
+                        <div class="caption">
+   
+                         <h3>HISTORY</h3>
+   
+                         </div>
+                      </div>
+  
+                  </a>
+    
+            </div>
+    
+        </div>
+  
+      </div>
+   
+</div>
+<footer>
+<center>
+<div class="container">
+<p>Copyright &copy; GTSF BANKING. All Rights Reserved | Contact Us: +91 90000 00000.</p>
+</div>
+</center>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" Content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+<title>Banking system| Index</title>
+</head>
+
+<body onload="loader()">
+
+  <!-- loader for splash screen -->
+  <div id="loading"></div>
+
+
+<body>
+<style>
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color:none;
+}
+.sat
+{
+color:red;
+}
+footer
+{
+margin-top:18px;
+margin-bottom:20px;
+}
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #e4eff2 url("https://media.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.gif") no-repeat center center;
+    z-index: 99999;
+}
+.button {
+  background-color:black;
+border-radius:10px;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+
+<header>
+<div class=" nav navbar-fixed top navbar-inverse">
+<button class="active">
+<div class="navbar-brand">GTSF BANKING</div></button>
+<a href="home.html"><div class=" navbar-brand ">HOME </div></a>
+</div>
+</header>
+<center>
+<img  src="download.jpg" width="50%" height="50%"><h3 class="sat">Money Transaction<br>Easy way to transfer money from any where</h3>
+<a href="home.html"><button class="button"><h2>Get Started<h2></button></a></img></center>
+<footer>
+<center><strong>
+ &copy copyright reserved in 2021 made by SATHISH S<br>GRIP THE SPARK FOUNDATION</strong> </center>
+</footer>
+
+<script>
+      var preloader = document.getElementById("loading");
+      function loader(){
+        preloader.style.display = 'none';
+      }
+    </script>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+      });
+    </script>
+
+</body>
+</html>
